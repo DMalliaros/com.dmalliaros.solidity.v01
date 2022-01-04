@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.10;
+pragma solidity >=0.4.22 <0.9.0;
 
 contract HelloWorld {
-  string helloMessage = "Hello World";
+    string private helloMessage = "Hello world";
 
-  function getHelloMessage() public view returns (string memory) {
-    return helloMessage;
-  }
+    function getHelloMessage() public view returns (string memory) {
+        return helloMessage;
+    }
 }
